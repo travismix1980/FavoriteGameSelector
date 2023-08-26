@@ -13,5 +13,22 @@ namespace FavoriteGameSelector
         {
 
         }
+
+        protected void DDGameList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LblGame.Text = DDGameList.Text;
+            if(DDGameList.SelectedIndex == 1)
+            {
+
+            }
+            else if (DDGameList.SelectedIndex == 2)
+            {
+
+            }
+            else if(DDGameList.SelectedIndex == 3)
+            {
+
+            }
+        }
     }
 }
