@@ -19,15 +19,15 @@ namespace FavoriteGameSelector
             LblGame.Text = DDGameList.Text;
             if(DDGameList.SelectedIndex == 1)
             {
-
+                ImgGame.ImageUrl = "./Images/BG3.jpg";
             }
             else if (DDGameList.SelectedIndex == 2)
             {
-
+                ImgGame.ImageUrl = "./Images/TombRaider.jpg";
             }
             else if(DDGameList.SelectedIndex == 3)
             {
-
+                ImgGame.ImageUrl = "./Images/RE2.jpg";
             }
         }
     }
