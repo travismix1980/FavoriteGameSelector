@@ -24,7 +24,7 @@
             <h1>Favorite Game</h1>
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style2">Select a Game from the List...&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="LblGame" runat="server"></asp:Label>
+                    <td class="auto-style2">Select a Game from the List...&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="LblGame" runat="server" Width="200px"></asp:Label>
                     </td>
                     <td class="auto-style3" rowspan="2">
                         <asp:Image ID="ImgGame" runat="server" Height="206px" Width="334px" />

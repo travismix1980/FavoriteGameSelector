@@ -11,13 +11,17 @@ namespace FavoriteGameSelector
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                LblGame.Text = $"<h2><b>Welcome</b></h2>";
 
+            }
         }
 
         protected void DDGameList_SelectedIndexChanged(object sender, EventArgs e)
         {
             LblGame.Text = DDGameList.Text;
-            if(DDGameList.SelectedIndex == 1)
+            if (DDGameList.SelectedIndex == 1)
             {
                 ImgGame.ImageUrl = "./Images/BG3.jpg";
             }
@@ -25,9 +29,13 @@ namespace FavoriteGameSelector
             {
                 ImgGame.ImageUrl = "./Images/TombRaider.jpg";
             }
-            else if(DDGameList.SelectedIndex == 3)
+            else if (DDGameList.SelectedIndex == 3)
             {
                 ImgGame.ImageUrl = "./Images/RE2.jpg";
+            }
+            if (DDGameList.Items.Count > 3)
+            {
+                DDGameList.Items.RemoveAt(0);
             }
         }
     }
